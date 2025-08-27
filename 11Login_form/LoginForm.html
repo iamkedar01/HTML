@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login From useing the HTML</title>
+</head> 
+<style>
+    body{
+        background-color: rgb(134, 132, 132);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    button{
+        background-color: lightgreen;
+        width: 100%;
+        height: 100%;
+        color:black;
+        padding: 0px;
+        margin : 10px 0px;
+        border : none;
+        cursor : pointer;
+    }
+    input[type=text], input[type=password] {
+        width : 100%;
+        margin : 8px 0;
+        padding : 12px 20px;
+        display:inline-block ;
+        border: 2px solid rgb(255, 0, 170);
+        box-sizing: border-box;
+    }
+    button:hover{
+        opacity: 0.7;
+        
+    }
+    #cancelbtn{
+        width: auto;
+        padding: 10px 18px;
+        margin:10px  5px;
+    }
+</style>
+<body >
+    <h1 style=" text-align: center; ;" >Login form</h1>
+    <form style="border: 3px solid #9b9999d3;" >
+        <div style="padding: 30px; background-color:skyblue ;">
+        <label> Username:</label>
+        <input type="text" placeholder="Enter Username" name="Username" required>
+        <br>
+        <br>
+        <label> Password:</label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <br>
+        <br>
+        <button type="submit"> Login</button>
+        <input type="checkbox" checked="checked"> Remember Me 
+        <br>
+        <button type="button" id="cancelbtn" >Cancle </button>
+
+        <br>
+        <a href="#"> Forget password </a>
+        <br>
+        <br>
+        <a href="Register.html"> Register </a>
+    </div>
+    </form>
+
+</body>
+</html>

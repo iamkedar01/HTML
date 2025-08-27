@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+       textarea,input[type=text], input[type=number],input[type=email],input[type=password] {
+        width : 100%;
+        margin : 8px 0;
+        padding : 12px 20px;
+        display:inline-block ;
+        border: 2px solid rgb(255, 0, 170);
+        box-sizing: border-box;
+    }
+
+    </style>
+</head>
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: rgb(136, 136, 136);">
+    <h1 style="text-align: center;">Resisration Form</h1>
+    <br>
+    <form style="border: 3px solid #9b9999d3;" >
+        <div style="padding: 30px; background-color:lightblue ;">
+            <label> First Name: </label>
+            <input type="text" placeholder="Enter a First Name " name="First Name" maxlength="15" required>
+            <br>
+            <label> Middle Name: </label>
+            <input type="text" placeholder="Enter a Middle Name" name="Middle Name" maxlength="15" >
+            <br>
+            <label> Last Name:</label>
+            <input type="text" placeholder="Enter a Last Name" name="Last Name" maxlength="15" required>
+            <br>
+            <label>Course:</label>
+            <select>
+                <option value="Course">Course</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.Tch">M.Tech </option>
+                <option value="MBA">MBA </option>
+            </select>
+            <br> <br>
+            <label>Gender:</label> <br>
+            <input type="radio" name="Male"> Male <br>
+            <input type="radio" name="Female"> Female<br>
+            <input type="radio" name="Other">Other<br>
+            <br>
+            <label>Phone :</label> <br>
+            <input type="text" name="Country code" value="+91" maxlength="3"> <br>
+            <input type="number" name="Phone" placeholder="Enter Your Phone Number" 
+       pattern="[0-9]{10}" maxlength="10" required> 
+            <br>
+            <br>
+            <label>Address: </label><br>
+            <textarea cols="80" rows="7" value="Address" placeholder="Enter Your Address"></textarea>
+            <label>Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email">
+            <br> <br>
+            <label>Password:</label>
+            <input type="Password" id="pass" name="pass" placeholder="Enter your Password">
+            <br> <br>
+            <label>Re-enter Password:</label>
+            <input type="Password" id="pass" name="pass" placeholder="Reenter your Password">
+            <br><br>
+            <input type="button" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
